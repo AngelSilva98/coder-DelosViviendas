@@ -142,6 +142,7 @@ main{
     padding-top: 30px;
     font-size: 40px;
     border: 1px solid black;
+    margin: 20px;
 
 }
 
@@ -573,13 +574,13 @@ body{
 
 @media screen and (max-width: 950px){
     .gridGaleria{
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 250px;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 220px;
     }
 
     .gridItem{
         grid-column: 1;
-        grid-row: span 2;
+        grid-row: span 1;
     }
 
     .descripcionUno{
@@ -600,8 +601,9 @@ body{
     }
 
     .gridModelos{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
         grid-auto-rows: 250px;
+        display: block;
         
     }
     .modeloItem{
@@ -612,6 +614,15 @@ body{
     .nosotros{
         display: block;
     }
+
+    .hero div h2 {
+        font-size: 30px;
+    }
+
+    .hero div p{
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -657,6 +668,7 @@ body{
         width: 400px;
         margin: 20px;
     }
+
 }
 
 @media screen and (max-width:630px){
@@ -703,6 +715,9 @@ body{
         height: 150px;
     }
 
+    .hero div a{
+        font-size: 10px;
+    }
 
 
 }
