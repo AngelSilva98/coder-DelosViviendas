@@ -659,13 +659,19 @@ body{
         flex-direction: column;
     }
 
-    form{
+
+    .formularioContacto form h2 {
+        font-size: 20px;
+    }
+
+    .formularioContacto form{
         width: 100%;
     }
 
 
+
     .formularioContacto iframe {
-        width: 400px;
+        width: 300px;
         margin: 20px;
     }
 
@@ -719,7 +725,44 @@ body{
         font-size: 12px;
     }
 
+    .formularioContacto iframe {
+        width: 250px;
+        
+    }
 
 }
 
+@media screen and (max-width:350px){
+
+    .formularioContacto iframe {
+        width: 150px;
+    }
+
+    .formularioContacto form h2 {
+        font-size: 13px;
+    }
+
+    .tituloSecundario div h2 {
+        font-size: 25px;
+    }
+
+    .descripcionUno img{
+        width: 150px;
+        height: 120px;
+
+                        
+    }
+    .descripcionDos img{
+        width: 150px;
+        height: 120px;
+    }
+
+    .hero div a{
+        font-size: 10px;
+    }
+
+
+
+    
+}
 
