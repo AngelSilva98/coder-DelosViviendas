@@ -142,7 +142,6 @@ main{
     padding-top: 30px;
     font-size: 40px;
     border: 1px solid black;
-    margin: 20px;
 
 }
 
@@ -730,6 +729,10 @@ body{
         
     }
 
+    .tituloSecundario div h2{
+        font-size: 30px;
+    }
+
 }
 
 @media screen and (max-width:350px){
@@ -768,6 +771,7 @@ body{
     .mandarContacto div a{
         font-size: 10px;
     }
+
 
 
 
