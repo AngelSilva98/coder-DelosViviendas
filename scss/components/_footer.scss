@@ -1,0 +1,22 @@
+@import "../base/variables";
+/*-----FOOTER*/
+
+footer{
+    background-color: #16355e;
+    padding: 5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+
+    p{
+        color: #ffff;
+    }
+
+    div img{
+        margin: 5px;
+        border: 1px solid black ;
+        border-radius: 100%;
+    }
+
+}

@@ -1,0 +1,65 @@
+@import "../base/variables";
+
+/* ----HEADER---*/
+
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    .nav{
+        background-color: $color-principal;
+        height: 90px;
+        color: #ffff;
+        .navContainer{
+            background-color: $color-principal;
+            display: flex;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            .navLogo{
+                background-color: $color-principal;
+                width: 90px;
+                height: 85px;
+            }
+            .navLabel {
+                display: none;
+                .navImg{
+                    width: 40px;
+                    border: 1px solid $color-secundario;
+                    background-color: $color-secundario;
+                    border-radius:5px;
+                
+                }
+            }
+            .navInput {
+                display: none;
+            }
+            .navMenu {
+                display: grid;
+                grid-auto-flow: column;
+                gap: 3em;
+                .navItem{
+                    color: #fff;
+                    text-decoration: none;
+                    --clippy: polygon(0 0,0 0, 0 100%, 0% 100%);
+                    &:hover{
+                        --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        background: #fff;
+                        width: 90%;
+                        margin-top: 3px;
+                        height: 3px;
+                        clip-path: var(--clippy);
+                        transition: clip-path .3s;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
