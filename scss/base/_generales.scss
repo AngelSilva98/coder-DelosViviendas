@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #ef7c11;
+    background-color: $color-secundario;
     display:flex;
     flex-direction: column;
     min-height: 100vh;
@@ -57,5 +57,6 @@ body{
     h4{
         color: white;
         margin-top: 20px;
+        font-size: 25px;
     }
 }

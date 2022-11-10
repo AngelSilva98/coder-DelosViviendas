@@ -11,12 +11,18 @@
         grid-row: span 1;
     }
 
+    .gridGaleria .gridItem img{
+        width: 60vw;
+        height: 40vh;
+    }
+        
+
     .descripcionUno{
         flex-direction: column;
         align-items: center;
     }
     .descripcionUno img{
-        margin: 5px;
+        margin: 10px;
     }
 
     .descripcionDos{
@@ -29,18 +35,31 @@
     }
 
     .gridModelos{
-        grid-template-columns: repeat(3,1fr);
-        grid-auto-rows: 250px;
-        display: block;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 330px;
+        
+        justify-items: center;
         
     }
-    .modeloItem{
+
+    .gridModelos .modeloItem {
         grid-column: 1;
         grid-row: span 1;
+        
+    }
+
+    .gridModelos .modeloItem img{
+        width: 400px;
+        height: 330px;
+        
     }
 
     .nosotros{
-        display: block;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        
     }
 
     .hero div h1 {
@@ -52,6 +71,7 @@
     }
 
 }
+
 
 @media screen and (max-width: 800px) {
 
@@ -99,22 +119,49 @@
 
 
     .formularioContacto iframe {
-        width: 300px;
+        width: 70vw;
         margin: 20px;
+        height: 30vh;
+    }
+
+    .gridPlanos .itemPlanos img {
+        height: 40vh;
+    }
+
+    .gridModelos .modeloItem div img{
+
+        width: 350px;
+        height: 280px;
     }
 
 }
 
+@media screen and (max-width: 700px) {
+
+    .nosotros div img {
+        width: 250px;
+        height: 220px;
+    }
+
+    .gridModelos .modeloItem img{
+        width: 350px;
+        height: 280px;
+    }
+}
+
 @media screen and (max-width:630px){
+
 
     .descripcionUno div p{
 
         width: 100%;
-                        
+        font-size: 20px;
     }
 
     .descripcionDos div p{
         width: 100%;
+        font-size: 20px;
+        
     }
     footer {
         flex-direction: column;
@@ -122,14 +169,32 @@
 
     .gridPlanos{
         grid-template-columns: repeat(1,1fr);
-        grid-auto-rows: 250px;
+        justify-items: start;
     }
 
     .itemPlanos{
         grid-column: 1;
         grid-row: span 1;
     }
-    
+
+    .gridPlanos .itemPlanos img{
+        width: 55vw;
+        height: 47vh;
+    }
+
+    .carrusel div img{
+        height: 40vh;
+    }
+
+    .nosotros div p{
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .nosotros div img{
+        width: 200px;
+        height: 170px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -143,11 +208,11 @@
         grid-row: span 1;
     }
 
-    .nosotros div img{
-
-        width: 200px;
-        height: 150px;
+    .gridModelos .modeloItem img{
+        width: 300px;
+        height: 230px;
     }
+
 
     .hero div a{
         font-size: 12px;
@@ -162,9 +227,19 @@
         font-size: 30px;
     }
 
+    .nosotros div img{
+        width: 35vw;
+    }
+
+    .carrusel div img{
+
+        width: 70vw !important;
+    }
+
 }
 
-@media screen and (max-width:350px){
+
+@media screen and (max-width:380px){
 
     .formularioContacto iframe {
         width: 150px;
@@ -199,6 +274,32 @@
 
     .mandarContacto div a{
         font-size: 10px;
+    }
+    
+    .nosotros div img{
+        height: 20vh;
+    }
+
+    .gridModelos .modeloItem img{
+        width: 270px;
+        height: 200px;
+        
+    }
+
+    .gridPlanos{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: start;
+        align-items: center;
+    }
+
+    .tituloPlanos h4{
+        font-size: 20px;
+
+    }
+
+    .gridPlanos .itemPlanos img{
+        height: 40vh;
+        width: 60vw;
     }
 
 

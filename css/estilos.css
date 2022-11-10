@@ -48,7 +48,8 @@ body {
   font-size: 30px; }
   .tituloPlanos h4 {
     color: white;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 25px; }
 
 /* ----HEADER---*/
 header {
@@ -114,21 +115,20 @@ header {
   justify-content: center;
   align-items: center; }
   .hero div {
-    color: #ff7b00;
+    color: #ef7c11;
     text-align: center;
     text-shadow: 0 0 2px white; }
     .hero div h1 {
-      font-size: 60px;
-      padding-bottom: 50px; }
-    .hero div p {
-      font-size: 30px;
-      line-height: 50px;
+      font-size: 45px;
       padding-bottom: 30px; }
+    .hero div p {
+      font-size: 20px;
+      line-height: 40px; }
     .hero div a {
       background-color: #16355e;
       text-decoration: none;
       color: #ffff;
-      font-size: 20px;
+      font-size: 15px;
       border: 1px solid transparent;
       border-radius: 20px;
       padding: 10px;
@@ -146,16 +146,15 @@ header {
   .descripcionUno img {
     width: 300px;
     height: 250px;
-    border: 2px solid #16355e;
     border-radius: 15px;
     margin: 20px; }
   .descripcionUno div {
-    padding: 40px;
+    padding: 20px;
     border: 2px solid #16355e;
     border-radius: 20px; }
     .descripcionUno div p {
       width: 500px;
-      font-size: 25px; }
+      font-size: 20px; }
 
 .descripcionDos {
   display: flex;
@@ -168,16 +167,15 @@ header {
   .descripcionDos img {
     width: 300px;
     height: 250px;
-    border: 2px solid #16355e;
     border-radius: 15px;
     margin: 20px; }
   .descripcionDos div {
-    padding: 40px;
+    padding: 20px;
     border: 2px solid #16355e;
     border-radius: 20px; }
     .descripcionDos div p {
       width: 500px;
-      font-size: 25px; }
+      font-size: 20px; }
 
 .gridGaleria {
   width: 100%;
@@ -188,30 +186,34 @@ header {
   gap: 15px;
   padding: 5px;
   padding-bottom: 10px;
-  background-color: #ef7c11; }
+  background-color: #ef7c11;
+  justify-items: center; }
   .gridGaleria .gridItem {
     position: relative; }
     .gridGaleria .gridItem img {
-      width: 100%;
+      width: 45vw;
       height: 100%;
-      object-fit: cover;
       transition: 1s; }
       .gridGaleria .gridItem img:hover {
-        transform: scale(1.01); }
+        transform: scale(1.03); }
     .gridGaleria .gridItem h3 {
       position: absolute;
       bottom: 0;
-      background-color: #16355e;
+      background-color: #16355eaf;
       color: #ef7c11;
       width: 100%;
-      padding: 5px;
       font-size: 30px;
       text-align: center; }
 
-.slide {
-  margin: 10px; }
-  .slide img {
-    height: 70vh; }
+.carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .carrusel div {
+    width: 65vw; }
+    .carrusel div img {
+      height: 60vh;
+      width: 100%; }
 
 .btnModelos {
   display: flex;
@@ -249,24 +251,23 @@ header {
 .nosotros {
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: evenly; }
   .nosotros div p {
     text-align: center;
-    color: #ef7c11;
-    padding: 20px;
+    color: white;
+    padding: 50px;
     margin: 20px;
     background-color: #16355e;
     border: 1px solid black;
     border-radius: 20px;
-    font-size: 25px;
-    line-height: 32px; }
+    font-size: 20px;
+    line-height: 30px; }
     .nosotros div p span {
       font-weight: bold;
       font-size: 25px; }
   .nosotros div img {
-    width: 400px;
-    height: 350px;
-    border: 1px solid #16355e;
+    width: 300px;
+    height: 270px;
     border-radius: 20px;
     margin: 20px; }
 
@@ -316,7 +317,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: 250px;
   gap: 15px;
-  padding: 5px; }
+  padding: 40px; }
   .gridModelos .modeloItem img {
     width: 100%;
     height: 100%;
@@ -352,12 +353,12 @@ header {
   margin-top: 50px;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: 250px;
   gap: 15px 15px; }
   .gridPlanos .itemPlanos img {
-    width: 100%;
-    height: 100%;
+    width: 30vw;
+    height: 60vh;
     transition: 0.6s; }
     .gridPlanos .itemPlanos img:hover {
       transform: scale(1.1); }
@@ -385,25 +386,33 @@ footer {
   .gridItem {
     grid-column: 1;
     grid-row: span 1; }
+  .gridGaleria .gridItem img {
+    width: 60vw;
+    height: 40vh; }
   .descripcionUno {
     flex-direction: column;
     align-items: center; }
   .descripcionUno img {
-    margin: 5px; }
+    margin: 10px; }
   .descripcionDos {
     flex-direction: column;
     align-items: center; }
   .descripcionDos img {
     margin: 5px; }
   .gridModelos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    display: block; }
-  .modeloItem {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 330px;
+    justify-items: center; }
+  .gridModelos .modeloItem {
     grid-column: 1;
     grid-row: span 1; }
+  .gridModelos .modeloItem img {
+    width: 400px;
+    height: 330px; }
   .nosotros {
-    display: block; }
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
   .hero div h1 {
     font-size: 30px; }
   .hero div p {
@@ -437,22 +446,49 @@ footer {
   .formularioContacto form {
     width: 100%; }
   .formularioContacto iframe {
-    width: 300px;
-    margin: 20px; } }
+    width: 70vw;
+    margin: 20px;
+    height: 30vh; }
+  .gridPlanos .itemPlanos img {
+    height: 40vh; }
+  .gridModelos .modeloItem div img {
+    width: 350px;
+    height: 280px; } }
+
+@media screen and (max-width: 700px) {
+  .nosotros div img {
+    width: 250px;
+    height: 220px; }
+  .gridModelos .modeloItem img {
+    width: 350px;
+    height: 280px; } }
 
 @media screen and (max-width: 630px) {
   .descripcionUno div p {
-    width: 100%; }
+    width: 100%;
+    font-size: 20px; }
   .descripcionDos div p {
-    width: 100%; }
+    width: 100%;
+    font-size: 20px; }
   footer {
     flex-direction: column; }
   .gridPlanos {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 250px; }
+    justify-items: start; }
   .itemPlanos {
     grid-column: 1;
-    grid-row: span 1; } }
+    grid-row: span 1; }
+  .gridPlanos .itemPlanos img {
+    width: 55vw;
+    height: 47vh; }
+  .carrusel div img {
+    height: 40vh; }
+  .nosotros div p {
+    font-size: 20px;
+    line-height: 23px; }
+  .nosotros div img {
+    width: 200px;
+    height: 170px; } }
 
 @media screen and (max-width: 500px) {
   .gridModelos {
@@ -461,17 +497,21 @@ footer {
   .modeloItem {
     grid-column: 1;
     grid-row: span 1; }
-  .nosotros div img {
-    width: 200px;
-    height: 150px; }
+  .gridModelos .modeloItem img {
+    width: 300px;
+    height: 230px; }
   .hero div a {
     font-size: 12px; }
   .formularioContacto iframe {
     width: 250px; }
   .tituloSecundario div h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .nosotros div img {
+    width: 35vw; }
+  .carrusel div img {
+    width: 70vw !important; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   .formularioContacto iframe {
     width: 150px; }
   .formularioContacto form h2 {
@@ -489,4 +529,18 @@ footer {
   .mandarContacto div h3 {
     font-size: 15px; }
   .mandarContacto div a {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .nosotros div img {
+    height: 20vh; }
+  .gridModelos .modeloItem img {
+    width: 270px;
+    height: 200px; }
+  .gridPlanos {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    align-items: center; }
+  .tituloPlanos h4 {
+    font-size: 20px; }
+  .gridPlanos .itemPlanos img {
+    height: 40vh;
+    width: 60vw; } }
