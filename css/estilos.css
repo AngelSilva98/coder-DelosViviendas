@@ -113,7 +113,8 @@ header {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  object-fit: cover; }
   .hero div {
     color: #ef7c11;
     text-align: center;
