@@ -387,8 +387,7 @@ footer {
     grid-column: 1;
     grid-row: span 1; }
   .gridGaleria .gridItem img {
-    width: 60vw;
-    height: 40vh; }
+    width: 60vw; }
   .descripcionUno {
     flex-direction: column;
     align-items: center; }
