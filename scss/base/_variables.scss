@@ -1,3 +1,5 @@
+
+// Variables //
 $color-principal: #16355e;
 $color-secundario: #ef7c11;
 
@@ -25,5 +27,25 @@ $font-size:
 
 $boton:(
     bg-boton: $color-principal,
-    borde: 20px,
+    borde-radio: 20px,
 );
+
+
+//! Extends
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// mixin
+
+@mixin grid ($grid, $template, $flow,$gap){
+    display: $grid;
+    grid-template-columns: $template;
+    grid-auto-flow: $flow;
+    gap: $gap;
+}
+
+

@@ -6,6 +6,10 @@
     box-sizing: border-box ;
 }
 
+h1,h2,h3,h4,h5,h6,p,a, input, textarea{
+    margin: 0;
+}
+
 body{
     background-color: $color-secundario;
     display:flex;
@@ -23,29 +27,29 @@ body{
     background-color: $color-principal;
     color: $color-secundario;
     padding-top: 30px;
-    font-size: 40px;
+    font-size: nth($font-size , 2);
     border: 1px solid black;
 }
 
-.tituloGaleria{
+.tituloGaleria h2{
     background-color: $color-principal;
     text-align: center;
     padding: 30px;
     color: $color-secundario;
-    font-size: 40px;
+    font-size: nth($font-size , 2);
 }
 
-.tituloModelos{
+.tituloModelos h2{
     text-align: center;
     background-color: $color-principal;
     margin: 20px;
     padding: 30px;
     color: $color-secundario;
-    font-size: 30px;
+    font-size: nth($font-size , 2);
     border-radius: 10px;
 }
 
-.tituloPlanos{
+.tituloPlanos {
     text-align: center;
     background-color: $color-principal;
     margin-top: 20px;
@@ -53,10 +57,13 @@ body{
     margin: 20px;
     border-radius: 15px;
     color: $color-secundario;
-    font-size: 30px;
+    font-size: nth($font-size , 3);
     h4{
         color: white;
         margin-top: 20px;
-        font-size: 25px;
+        font-size: nth($font-size , 4);
     }
 }
+
+
+

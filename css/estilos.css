@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300;1,400;1,700;1,800&display=swap");
+.descripcionUno, .descripcionDos, .carrusel, .btnModelos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+  margin: 0; }
 
 body {
   background-color: #ef7c11;
@@ -18,23 +26,23 @@ body {
   background-color: #16355e;
   color: #ef7c11;
   padding-top: 30px;
-  font-size: 40px;
+  font-size: 50px;
   border: 1px solid black; }
 
-.tituloGaleria {
+.tituloGaleria h2 {
   background-color: #16355e;
   text-align: center;
   padding: 30px;
   color: #ef7c11;
-  font-size: 40px; }
+  font-size: 50px; }
 
-.tituloModelos {
+.tituloModelos h2 {
   text-align: center;
   background-color: #16355e;
   margin: 20px;
   padding: 30px;
   color: #ef7c11;
-  font-size: 30px;
+  font-size: 50px;
   border-radius: 10px; }
 
 .tituloPlanos {
@@ -45,11 +53,16 @@ body {
   margin: 20px;
   border-radius: 15px;
   color: #ef7c11;
-  font-size: 30px; }
+  font-size: 40px; }
   .tituloPlanos h4 {
     color: white;
     margin-top: 20px;
-    font-size: 25px; }
+    font-size: 30px; }
+
+.descripcionUno, .descripcionDos, .carrusel, .btnModelos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* ----HEADER---*/
 header {
@@ -101,6 +114,11 @@ header {
             clip-path: var(--clippy);
             transition: clip-path .3s; }
 
+.descripcionUno, .descripcionDos, .carrusel, .btnModelos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /*----------main index---------------*/
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.651)), url(../img/casa2.jpg);
@@ -116,21 +134,21 @@ header {
   align-items: center;
   object-fit: cover; }
   .hero div {
-    color: #ef7c11;
     text-align: center;
     text-shadow: 0 0 2px white; }
     .hero div h1 {
-      font-size: 45px;
+      font-size: 50px;
+      color: #ef7c11;
       padding-bottom: 30px; }
     .hero div p {
       font-size: 20px;
-      line-height: 40px; }
+      line-height: 40px;
+      color: #ef7c11; }
     .hero div a {
       background-color: #16355e;
       text-decoration: none;
       color: #ffff;
       font-size: 15px;
-      border: 1px solid transparent;
       border-radius: 20px;
       padding: 10px;
       transition: 1s; }
@@ -138,15 +156,12 @@ header {
         background-color: #ef7c11; }
 
 .descripcionUno {
-  display: flex;
   background-color: #ef7c11;
-  justify-content: center;
-  align-items: center;
   padding-top: 10px;
   margin: 20px; }
   .descripcionUno img {
     width: 300px;
-    height: 250px;
+    height: 230px;
     border-radius: 15px;
     margin: 20px; }
   .descripcionUno div {
@@ -158,16 +173,13 @@ header {
       font-size: 20px; }
 
 .descripcionDos {
-  display: flex;
   background-color: #ef7c11;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 10px;
   flex-direction: row-reverse;
   margin: 20px; }
   .descripcionDos img {
     width: 300px;
-    height: 250px;
+    height: 200px;
     border-radius: 15px;
     margin: 20px; }
   .descripcionDos div {
@@ -190,13 +202,12 @@ header {
   background-color: #ef7c11;
   justify-items: center; }
   .gridGaleria .gridItem {
-    position: relative; }
+    position: relative;
+    transition: 1s; }
     .gridGaleria .gridItem img {
       width: 45vw;
       height: 100%;
-      transition: 1s; }
-      .gridGaleria .gridItem img:hover {
-        transform: scale(1.03); }
+      border-radius: 15px 15px 0px; }
     .gridGaleria .gridItem h3 {
       position: absolute;
       bottom: 0;
@@ -204,22 +215,22 @@ header {
       color: #ef7c11;
       width: 100%;
       font-size: 30px;
-      text-align: center; }
+      text-align: center;
+      margin: 0;
+      transition: 1s; }
+    .gridGaleria .gridItem:hover {
+      transform: scale(1.03); }
 
 .carrusel {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  margin: 20px; }
   .carrusel div {
     width: 65vw; }
     .carrusel div img {
       height: 60vh;
-      width: 100%; }
+      width: 100%;
+      border-radius: 15px; }
 
 .btnModelos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   padding: 20px;
   text-shadow: 0 0 1px white;
@@ -309,6 +320,8 @@ header {
       max-width: 100%;
       min-width: 100%;
       border-radius: 15px; }
+  .formularioContacto iframe {
+    border-radius: 15px; }
 
 /*-------------Main Modelos------------*/
 .gridModelos {
@@ -319,12 +332,25 @@ header {
   grid-auto-flow: 250px;
   gap: 15px;
   padding: 40px; }
-  .gridModelos .modeloItem img {
-    width: 100%;
-    height: 100%;
+  .gridModelos .modeloItem {
+    position: relative;
+    margin: 5px;
     transition: 1s; }
-    .gridModelos .modeloItem img:hover {
-      transform: scale(1.1); }
+    .gridModelos .modeloItem img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px 15px 0px; }
+    .gridModelos .modeloItem h4 {
+      position: absolute;
+      bottom: 0;
+      background-color: #16355eaf;
+      color: #ef7c11;
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      margin: 0; }
+    .gridModelos .modeloItem:hover {
+      transform: scale(1.03); }
 
 .mandarContacto {
   text-align: center; }
@@ -356,13 +382,19 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: 250px;
-  gap: 15px 15px; }
+  gap: 15px;
+  justify-items: center; }
   .gridPlanos .itemPlanos img {
     width: 30vw;
     height: 60vh;
     transition: 0.6s; }
     .gridPlanos .itemPlanos img:hover {
-      transform: scale(1.1); }
+      transform: scale(1.05); }
+
+.descripcionUno, .descripcionDos, .carrusel, .btnModelos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*-----FOOTER*/
 footer {
@@ -378,6 +410,11 @@ footer {
     margin: 5px;
     border: 1px solid black;
     border-radius: 100%; }
+
+.descripcionUno, .descripcionDos, .carrusel, .btnModelos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*------Media querie-------*/
 @media screen and (max-width: 950px) {
@@ -473,14 +510,13 @@ footer {
   footer {
     flex-direction: column; }
   .gridPlanos {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: start; }
+    grid-template-columns: repeat(1, 1fr); }
   .itemPlanos {
     grid-column: 1;
     grid-row: span 1; }
   .gridPlanos .itemPlanos img {
-    width: 55vw;
-    height: 47vh; }
+    width: 50vw;
+    height: 55vh; }
   .carrusel div img {
     height: 40vh; }
   .nosotros div p {
@@ -511,7 +547,7 @@ footer {
   .carrusel div img {
     width: 70vw !important; } }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   .formularioContacto iframe {
     width: 150px; }
   .formularioContacto form h2 {
@@ -537,10 +573,11 @@ footer {
     height: 200px; }
   .gridPlanos {
     grid-template-columns: repeat(1, 1fr);
-    justify-items: start;
     align-items: center; }
   .tituloPlanos h4 {
     font-size: 20px; }
   .gridPlanos .itemPlanos img {
-    height: 40vh;
-    width: 60vw; } }
+    height: 50vh;
+    width: 60vw; }
+  .nosotros div {
+    width: 100%; } }

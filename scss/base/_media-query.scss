@@ -168,7 +168,6 @@
 
     .gridPlanos{
         grid-template-columns: repeat(1,1fr);
-        justify-items: start;
     }
 
     .itemPlanos{
@@ -177,8 +176,8 @@
     }
 
     .gridPlanos .itemPlanos img{
-        width: 55vw;
-        height: 47vh;
+        width: 50vw;
+        height: 55vh;
     }
 
     .carrusel div img{
@@ -238,7 +237,7 @@
 }
 
 
-@media screen and (max-width:380px){
+@media screen and (max-width:390px){
 
     .formularioContacto iframe {
         width: 150px;
@@ -287,7 +286,6 @@
 
     .gridPlanos{
         grid-template-columns: repeat(1,1fr);
-        justify-items: start;
         align-items: center;
     }
 
@@ -297,8 +295,12 @@
     }
 
     .gridPlanos .itemPlanos img{
-        height: 40vh;
+        height: 50vh;
         width: 60vw;
+    }
+
+    .nosotros div {
+        width: 100%;
     }
 
 
