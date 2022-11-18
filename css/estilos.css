@@ -545,7 +545,8 @@ footer {
   .nosotros div img {
     width: 35vw; }
   .carrusel div img {
-    width: 70vw !important; } }
+    width: 70vw !important;
+    border-radius: 15px; } }
 
 @media screen and (max-width: 390px) {
   .formularioContacto iframe {
